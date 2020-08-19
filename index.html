@@ -16,15 +16,23 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <script>
-       $(document).ready(function() {
+       $(document).ready(() => {
            $("#submit").click(()=>{
-               let userInput=$("search").val()
-               alert(userInput)
-           })
-            $.ajax({
-                url:"http://www.omdbapi.com/?i=tt3896198&apikey=1e5fa4b4"
+               let userInput=$("#search").val()
+            //    alert(userInput)
+               $.ajax({
+                url:`http://www.omdbapi.com/?apikey=1e5fa4b4&s=${userInput}`
             })
-
+            .done((res)=>{
+                let movies = res.Search;
+                $.each(movies,(i,e)=>{
+                    let poster = e.Poster
+                    // console.log("index",i, "element",e.Poster)
+                    console.log("poster", poster)
+                    $("body").append(`<img src = "${poster}" alt = "movie poster" />`)
+                })
+            })
+           })
        });
 
 
@@ -39,7 +47,7 @@
 
 Please append it to all of your API requests,
 
-OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=1e5fa4b4
+OMDb API: http://www.omdbapi.com/?apikey=1e5fa4b4
 
 Click the following URL to activate your key: http://www.omdbapi.com/apikey.aspx?VERIFYKEY=101679a0-ff31-4936-9f6b-afa46d8ddd3d
 If you did not make this request, please disregard this email. -->
