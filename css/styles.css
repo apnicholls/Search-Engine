@@ -1,4 +1,17 @@
 body {
-  background-color: blue;
+  background-color: beige;
+}
+
+.header {
+  color: blue;
+  background-color: grey;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cntr {
+  Text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
