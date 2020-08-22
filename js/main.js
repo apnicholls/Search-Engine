@@ -14,6 +14,7 @@ $(document).ready(() => {
          let gifs =e.images.original.url;
          console.log("index", i, e.images.preview_webp.url)
        $("section").append(`<img src = "${gifs}" alt="giphy" />`) 
+         // $(body).append(`<li><img src = "${gifs}" /></li>`)
      });
     })
  })
