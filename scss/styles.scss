@@ -1,17 +1,64 @@
 body {
     background-color: beige;
 }
+/* This section is for the main header for the page and includes
+a nv bar group */
+header {
+    background-color: lightcoral;
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
 
-.header {
+nav ul li {
+    margin: 0;
+    margin-left: 1rem;
+}
+/* This section is for the div that holds the output
+for the gif count and the search text used */
+.counter {
+    background-color: "";
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#gifinput {
+    background-color: paleturquoise;
+    border: solid;
+    border-radius: 1rem;
+    
+}
+#gifcount {
+    background-color: paleturquoise;
+    border: solid;
+    border-radius: 1rem;
+}
+
+
+
+
+/* .header {
     color: blue;
     background-color: grey;
-}
-h1 {
+} */
+/* h1 {
     text-align: center;
 }
 .cntr {
     Text-align: center;
-}
+} */
 // Flex container CSS
 .flex-container {
     /* We first create a flex layout context */
