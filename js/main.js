@@ -11,10 +11,11 @@ $(document).ready(() => {
      let giphy = res.data;
      $.each (giphy, function (i,e) {
          let gifs =e.images.original.url;
-         console.log("index", i, e.images.preview_webp.url)
+         console.log("index", i, e.images.original.url)
        $("#try").append(`<li class="flex-item"><img src = "${gifs}" alt="giphy" /></li>`) 
          // $(body).append(`<div><img src = "${gifs}" /></div>`)
      });
     })
  })
 })
+// preview_webp
