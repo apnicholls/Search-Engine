@@ -27,42 +27,40 @@ for the gif count and the search text used */
 .counter {
     background-color: "";
     padding: 1rem;
+    padding-right: 2rem;
     margin: 0;
     margin-bottom: 0.25rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    
+    margin-left: 1rem;
+
 }
 #gifinput {
     background-color: paleturquoise;
     border: solid;
     border-radius: 1rem;
+    text-align: center;
+    font-weight: 900;
+    
     
 }
 #gifcount {
     background-color: paleturquoise;
     border: solid;
     border-radius: 1rem;
+    text-align: center;
+    font-weight: 900;
 }
-
-
-
-
-/* .header {
-    color: blue;
-    background-color: grey;
-} */
-/* h1 {
+h5 {
     text-align: center;
 }
-.cntr {
-    Text-align: center;
-} */
-// Flex container CSS
+/* This section is for the Felx-container that holds the appended
+ giphy images */
 .flex-container {
     /* We first create a flex layout context */
     display: flex;
+    flex-direction: row;
     
     /* Then we define the flow direction 
        and if we allow the items to wrap 
@@ -80,7 +78,7 @@ for the gif count and the search text used */
     list-style: none;
   }
   
-  .flex-item {
+/*   .flex-item {
     background: tomato;
     padding: 5px;
     width: 200px;
@@ -91,4 +89,11 @@ for the gif count and the search text used */
     font-weight: bold;
     font-size: 3em;
     text-align: center;
+  } */
+
+  img {
+    width: 350px;
+    height: 350px;
+    display: block;
+    padding-bottom: 0.25rem;
   }

@@ -38,56 +38,59 @@ for the gif count and the search text used */
 .counter {
   background-color: "";
   padding: 1rem;
+  padding-right: 2rem;
   margin: 0;
   margin-bottom: 0.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 1rem;
 }
 
 #gifinput {
   background-color: paleturquoise;
   border: solid;
   border-radius: 1rem;
+  text-align: center;
+  font-weight: 900;
 }
 
 #gifcount {
   background-color: paleturquoise;
   border: solid;
   border-radius: 1rem;
+  text-align: center;
+  font-weight: 900;
 }
 
-/* .header {
-    color: blue;
-    background-color: grey;
-} */
-/* h1 {
-    text-align: center;
+h5 {
+  text-align: center;
 }
-.cntr {
-    Text-align: center;
-} */
+
+/* This section is for the Felx-container that holds the appended
+ giphy images */
 .flex-container {
   /* We first create a flex layout context */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   /* Then we define the flow direction 
        and if we allow the items to wrap 
      * Remember this is the same as:
      * flex-direction: row;
      * flex-wrap: wrap;
      */
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   /* Then we define how is distributed the remaining space */
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -96,16 +99,22 @@ for the gif count and the search text used */
   list-style: none;
 }
 
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+/*   .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  } */
+img {
+  width: 350px;
+  height: 350px;
+  display: block;
+  padding-bottom: 0.25rem;
 }
 /*# sourceMappingURL=styles.css.map */
