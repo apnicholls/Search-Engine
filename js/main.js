@@ -2,11 +2,12 @@
 $(document).ready(() => {
    $('#submit').click(()=>{
       $("#try").empty();
-      $("#gifinput").val($("#search").val());
+      // makes value of gifinput equal to the value of search which is the input form value
+      $("#gifinput").val($("#search").val()); 
        let userInput = $("#search").val()
-    //    alert(userInput)
+
        $.ajax({
-       url: `http://api.giphy.com/v1/gifs/search?api_key=ztdTe0th1ULT4ef7vpNO0bTdJ0NUN6Gp&q=${userInput}&limit=10`
+       url: `http://api.giphy.com/v1/gifs/search?api_key=ztdTe0th1ULT4ef7vpNO0bTdJ0NUN6Gp&q=${userInput}`
  })
  .done((res)=>{
      let giphy = res.data;
@@ -15,10 +16,14 @@ $(document).ready(() => {
          console.log("index", i, e.images.original.url)
        $("#try").append(`<img src = "${gifs}" alt="giphy" />`) 
      });
-   //   alert($("#try").children('img').length)
+   //   counts img in container and asigns to a variable "count"
+   //    then assigns value of count to id gifcount
      var count = ($("#try").children('img').length)
-     $("#gifcount").val($('count').val());
-     alert (count)
+     $("#gifcount").val(count);
+
     })
  })
 })
+
+// $("#gifcount").val($('count').val());
+// &limit=10
