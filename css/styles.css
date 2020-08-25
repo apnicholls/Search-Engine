@@ -1,5 +1,8 @@
 body {
-  background-color: #979476;
+  background-image: url("/images/drop.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 /* This section is for the main header for the page and includes

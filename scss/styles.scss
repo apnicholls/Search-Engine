@@ -1,5 +1,9 @@
 body {
-    background-color: rgb(151, 148, 118);
+    // background-color: rgb(151, 148, 118);
+    background-image: url('/images/drop.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 /* This section is for the main header for the page and includes
 a nav bar group */
