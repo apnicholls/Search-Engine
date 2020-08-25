@@ -100,7 +100,7 @@ h5 {
   color: purple;
 }
 
-/* This section is for the Felx-container that holds the appended
+/* This section is for the Flex-container that holds the appended
  giphy images */
 .flex-container {
   /* We first create a flex layout context */

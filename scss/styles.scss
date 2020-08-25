@@ -15,19 +15,16 @@ a nav bar group */
 }
 #col1 {
     background-color:"";
-    // align-items: center;
     padding-left: 6rem;
     padding-top: 0.5rem;
 }
 #col2 {
     background-color:"";
-    // align-items: center;
     padding-left: 8rem;
 }
 #col3 {
     background-color:"";
     padding-left: 4rem;
-    // align-items: center;
 }
 
 
@@ -78,7 +75,7 @@ for the gif count and the search text used */
 h5 {
     text-align: center;
 }
-
+// This is for the input button and field for search
 #search {
     background-color: paleturquoise;
     border: solid;
@@ -89,7 +86,7 @@ h5 {
 }
 
 
-/* This section is for the Felx-container that holds the appended
+/* This section is for the Flex-container that holds the appended
  giphy images */
 .flex-container {
     /* We first create a flex layout context */
@@ -112,7 +109,7 @@ h5 {
     list-style: none;
   }
   
-// Image for appedned gifs 
+// Image for appended gifs 
   img {
     width: 350px;
     height: 350px;
