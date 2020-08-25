@@ -25,5 +25,3 @@ $(document).ready(() => {
  })
 })
 
-// $("#gifcount").val($('count').val());
-// &limit=10
