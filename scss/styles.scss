@@ -1,17 +1,36 @@
 body {
-    background-color: beige;
+    background-color: rgb(151, 148, 118);
 }
 /* This section is for the main header for the page and includes
-a nv bar group */
-header {
-    background-color: lightcoral;
-    padding: 1rem;
-    margin: 0;
-    margin-bottom: 0.25rem;
-    display: flex;
-    justify-content: space-between;
+a nav bar group */
+#grid-container {
+    background-color:"";
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    // max-width: 1280px;
+    margin-right: -1rem;
     align-items: center;
+    padding-block: 2rem;
 }
+#col1 {
+    background-color:"";
+    // align-items: center;
+    padding-left: 6rem;
+    padding-top: 0.5rem;
+}
+#col2 {
+    background-color:"";
+    // align-items: center;
+    padding-left: 8rem;
+}
+#col3 {
+    background-color:"";
+    padding-left: 4rem;
+    // align-items: center;
+}
+
+
 nav ul {
     display: flex;
     list-style: none;
@@ -21,6 +40,10 @@ nav ul {
 nav ul li {
     margin: 0;
     margin-left: 1rem;
+}
+
+nav ul li a {
+    color: black;
 }
 /* This section is for the div that holds the output
 for the gif count and the search text used */
@@ -55,6 +78,17 @@ for the gif count and the search text used */
 h5 {
     text-align: center;
 }
+
+#search {
+    background-color: paleturquoise;
+    border: solid;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 900;
+    color: purple;
+}
+
+
 /* This section is for the Felx-container that holds the appended
  giphy images */
 .flex-container {
@@ -78,19 +112,7 @@ h5 {
     list-style: none;
   }
   
-/*   .flex-item {
-    background: tomato;
-    padding: 5px;
-    width: 200px;
-    height: 150px;
-    margin-top: 10px;
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-  } */
-
+// Image for appedned gifs 
   img {
     width: 350px;
     height: 350px;
@@ -100,7 +122,7 @@ h5 {
 
   /* This section is for the footer and image */
  footer {
-    background-color: lightcoral;
+    background-color: "";
     padding: 1rem;
     margin: 0;
     margin-bottom: 0.25rem;
@@ -113,4 +135,17 @@ h5 {
     height:35px;
     display:block;
 
+}
+
+// ***MEDIA QUERIES FOR Header items ***
+@media screen and (max-width:800px) {
+    #grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    #grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
